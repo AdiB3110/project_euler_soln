@@ -1,0 +1,16 @@
+# C++ binaries and build
+*.exe
+*.out
+*.o
+*/build/
+*/Debug/
+*/Release/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Temp files
+*.log
+*.tmp
+
