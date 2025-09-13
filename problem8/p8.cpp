@@ -7,13 +7,13 @@ void greatestprod(const std::string &line , size_t subscr_final)
     size_t maxpos = line.length();
     size_t subscr{subscr_final};
     size_t initialpos{0};
-    int maxprod{1};
+    long long maxprod{0};
     int tempnum{0};
     std::string temp{""};
 
     while ((initialpos+subscr) <= maxpos)
     {
-        int currprod{1};
+        long long currprod{1};
         temp = line.substr(initialpos, subscr);
         for (auto &num : temp)
         {
@@ -48,7 +48,7 @@ int main(int argc, char *argv[])
 
     std::cout << "Length of string - " << line.length() << "\n";
     
-    size_t len{4};
+    size_t len{13};
     greatestprod(line , len);
 
     return 0;
